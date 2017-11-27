@@ -1,3 +1,5 @@
+require 'sinatra/base'
+
 class Web < Sinatra::Base
   get '/' do
     "<a href='https://slack.com/oauth/authorize?scope=commands,bot&client_id='>

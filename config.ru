@@ -2,7 +2,8 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'dotenv'
 Dotenv.load
-require 'sinatra'
+require 'slackbot'
 require 'web'
 
+run Slackbot::Bot
 run Web
